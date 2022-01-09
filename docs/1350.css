@@ -1,0 +1,1 @@
+.kui--scrollback:not([data-is-width-constrained]) .kui--repl-message{background-color:var(--color-repl-background);padding-top:.5em}.repl:not([data-session-init-status=Done]) .kui--session-init-done{display:none}
