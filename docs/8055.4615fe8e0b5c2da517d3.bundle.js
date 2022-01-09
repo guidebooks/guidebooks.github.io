@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_guidebooks_playground=self.webpackChunk_guidebooks_playground||[]).push([[8055],{38055:i=>{i.exports=JSON.parse('{"app":"icons/png/kui.png","large":"icons/svg/kui.svg","wide":"icons/svg/kui-wide.svg","favicon":"icons/ico/favicon.ico","filesystem":{"darwin":"icons/icns/kui.icns","win32":"icons/ico/kui.ico","linux":"icons/png/kui.png"}}')}}]);
