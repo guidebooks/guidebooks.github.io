@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_guidebooks_playground=self.webpackChunk_guidebooks_playground||[]).push([[2280],{92280:(e,s,u)=>{u.r(s),u.d(s,{default:()=>k});var a=u(19328),d=u(76036);const k=()=>{if(!(0,d.isHeadless)())return(0,a.Gk)()}}}]);
