@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_guidebooks_playground=self.webpackChunk_guidebooks_playground||[]).push([[8748],{18748:(e,n,s)=>{s.r(n),s.d(n,{default:()=>t});var u=s(67294);const a=u.lazy((()=>Promise.all([s.e(3973),s.e(2768)]).then(s.bind(s,47715))));function t(e){return u.createElement(a,Object.assign({},e))}}}]);
