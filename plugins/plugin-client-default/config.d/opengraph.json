@@ -1,11 +1,11 @@
 {
-  "ogSiteName": "Kui",
-  "ogTitle": "Kui: The CLI with a GUI twist",
-  "ogUrl": "http://kui.tools",
-  "ogDescription": "Kui is a platform for enhancing the terminal experience with visualizations. It provides users a modern alternative to ASCII terminals and web-based consoles. It provides tool developers an opportunity to unify these experiences.",
-  "ogImage": "https://raw.githubusercontent.com/IBM/kui/master/docs/readme/images/kui-experience.gif",
-  "ogLabel1": "Clone on GitHub",
-  "ogData1": "https://github.com/IBM/kui",
-  "ogLabel2": "Download Now",
-  "ogData2": "https://github.com/IBM/kui/releases"
+  "ogSiteName": "Guidebooks",
+  "ogTitle": "Guidebooks: A CLI approach to live documentation",
+  "ogUrl": "http://playground.guidebooks.dev",
+  "ogDescription": "Guidebooks allow you to write markdown documentation that lives and breathes. A guidebook senses its environment, and uses this information to draw a clear line between what remains to be done, and what steps of the guide have already been accomplished. To help users make progress, markdown code blocks become executable CLI commands.",
+  "ogImage": "https://raw.githubusercontent.com/guidebooks/playground/master/guidebooks.png",
+  "ogLabel1": "Learn more about Guidebooks",
+  "ogData1": "https://github.com/guidebooks/playground",
+  "ogLabel2": "Learn more about Kui",
+  "ogData2": "https://github.com/IBM/kui"
 }
