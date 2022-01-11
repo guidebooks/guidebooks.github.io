@@ -59,6 +59,7 @@ export default function renderMain(props: KuiProps) {
       lightweightTables
       loadingDone={null}
       {...props}
+      initialTabTitle=" "
       commandLine={
         props.commandLine || [
           'replay',
