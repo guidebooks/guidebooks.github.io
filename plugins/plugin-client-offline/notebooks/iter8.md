@@ -1,5 +1,5 @@
 ---
-title: Welcome to Iter8
+title: Example &mdash; Iter8
 layout:
   1: left
 ---
