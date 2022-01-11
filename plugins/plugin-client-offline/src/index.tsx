@@ -16,8 +16,8 @@
 
 import React from 'react'
 
-import { version } from '@kui-shell/client/package.json'
 import { productName } from '@kui-shell/client/config.d/name.json'
+import { homepage, version } from '@kui-shell/client/package.json'
 
 import { Kui, KuiProps, ContextWidgets, Icons, MeterWidgets, SpaceFiller, TextWithIconWidget } from '@kui-shell/plugin-client-common'
 
@@ -37,9 +37,9 @@ function Version() {
 function GithubIcon() {
   return (
     <a
-      href="https://github.com/IBM/kui"
       target="#"
-      title="Kui Github"
+      title="Visit our Github Page"
+      href={homepage}
       className="kui--status-stripe-element-clickable kui--status-stripe-element"
     >
       <Icons icon="Github" className="somewhat-larger-text" />

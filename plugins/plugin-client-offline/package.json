@@ -7,7 +7,7 @@
   "types": "mdist/index.d.ts",
   "license": "Apache-2.0",
   "author": "Mengting Yan",
-  "homepage": "https://portal-site.ac07fvgwkic.us-south.codeengine.appdomain.cloud/projects",
+  "homepage": "https://github.com/guidebooks/playground",
   "bugs": {
     "url": "https://github.com/IBM/kui/issues/new"
   },
