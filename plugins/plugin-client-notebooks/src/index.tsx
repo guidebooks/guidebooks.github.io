@@ -20,8 +20,6 @@ import { Capabilities } from '@kui-shell/core'
 import { Kui, KuiProps, ContextWidgets, MeterWidgets, CurrentWorkingDirectory, SpaceFiller } from '@kui-shell/plugin-client-common'
 
 import { CurrentContext, CurrentNamespace } from '@kui-shell/plugin-kubectl/components'
-import { ProxyOfflineIndicator } from '@kui-shell/plugin-proxy-support'
-import { Search } from '@kui-shell/plugin-electron-components'
 
 import auto from './autoplay'
 import { productName } from '@kui-shell/client/config.d/name.json'
@@ -36,7 +34,6 @@ import { productName } from '@kui-shell/client/config.d/name.json'
 
 /**
  * Format our body, with extra status stripe widgets
- *   - <ProxyOfflineIndicator />
  *
  */
 export default function renderMain(props: KuiProps) {
@@ -48,7 +45,6 @@ export default function renderMain(props: KuiProps) {
       productName={productName}
       lightweightTables
       {...props}
-      toplevel={!Capabilities.inBrowser() && <Search />}
       commandLine={
         props.commandLine || autoplay.length === 0 ? [] : [
           'replay',
@@ -63,7 +59,6 @@ export default function renderMain(props: KuiProps) {
       <SpaceFiller />
 
       <MeterWidgets>
-        {Capabilities.inBrowser() && <ProxyOfflineIndicator />}
       </MeterWidgets>
     </Kui>
   )

@@ -19,10 +19,7 @@ import React from 'react'
 import { Capabilities } from '@kui-shell/core'
 import { Kui, KuiProps, ContextWidgets, MeterWidgets, CurrentWorkingDirectory, SpaceFiller } from '@kui-shell/plugin-client-common'
 
-import { CurrentGitBranch } from '@kui-shell/plugin-git'
 import { CurrentContext, CurrentNamespace } from '@kui-shell/plugin-kubectl/components'
-import { ProxyOfflineIndicator } from '@kui-shell/plugin-proxy-support'
-import { Search } from '@kui-shell/plugin-electron-components'
 
 import { CatDogWidget } from '@kui-shell/plugin-example'
 
@@ -48,7 +45,6 @@ export default function renderMain(props: KuiProps) {
       productName={productName}
       lightweightTables
       {...props}
-      toplevel={!Capabilities.inBrowser() && <Search />}
       commandLine={
         props.commandLine || [
           'replay',
@@ -61,14 +57,12 @@ export default function renderMain(props: KuiProps) {
         <CurrentWorkingDirectory />
         <CurrentContext />
         <CurrentNamespace />
-        <CurrentGitBranch className="kui--hide-in-narrower-windows" />
       </ContextWidgets>
 
       <SpaceFiller />
 
       <MeterWidgets>
         <CatDogWidget />
-        {Capabilities.inBrowser() && <ProxyOfflineIndicator />}
       </MeterWidgets>
     </Kui>
   )
