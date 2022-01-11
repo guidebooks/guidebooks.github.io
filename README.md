@@ -35,3 +35,5 @@ becomes a live view that can sense and actuate the environment:
 ---
 
 This repository hosts the content for https://playground.guidebooks.dev
+
+![Guidebooks screenshot](guidebooks.png)
