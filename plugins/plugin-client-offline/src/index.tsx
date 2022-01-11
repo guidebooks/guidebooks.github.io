@@ -16,8 +16,10 @@
 
 import React from 'react'
 
-import { Kui, KuiProps } from '@kui-shell/plugin-client-common'
+import { version } from '@kui-shell/client/package.json'
 import { productName } from '@kui-shell/client/config.d/name.json'
+
+import { Kui, KuiProps, ContextWidgets, Icons, MeterWidgets, SpaceFiller, TextWithIconWidget } from '@kui-shell/plugin-client-common'
 
 /**
  * We will set this bit when the user dismisses the Welcome to Kui
@@ -26,6 +28,24 @@ import { productName } from '@kui-shell/client/config.d/name.json'
  *
  */
 // const welcomeBit = 'plugin-client-default.welcome-was-dismissed'
+
+
+function Version() {
+  return <TextWithIconWidget text={`Guidebooks v${version}`} viewLevel="normal" title={`Guidebooks version ${version}`} />
+}
+
+function GithubIcon() {
+  return (
+    <a
+      href="https://github.com/IBM/kui"
+      target="#"
+      title="Kui Github"
+      className="kui--status-stripe-element-clickable kui--status-stripe-element"
+    >
+      <Icons icon="Github" className="somewhat-larger-text" />
+    </a>
+  )
+}
 
 /**
  * Offline client definition
@@ -44,10 +64,20 @@ export default function renderMain(props: KuiProps) {
           'replay',
           '-r',
           '/kui/playground.md',
+          '/kui/iter8.md',
           '/kui/fybrik.md'
         ]
       }
     >
+      <ContextWidgets>
+        <Version/>
+      </ContextWidgets>
+
+      <SpaceFiller/>
+
+      <MeterWidgets>
+        <GithubIcon/>
+      </MeterWidgets>
     </Kui>
   )
 }
