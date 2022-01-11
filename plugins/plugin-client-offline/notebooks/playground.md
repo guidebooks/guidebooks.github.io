@@ -1,7 +1,9 @@
 ---
 title: Welcome to Guidebooks!
 layout:
-    1: default
+    1: 
+        position: default
+        maximized: true
     2: default
 ---
 
@@ -12,7 +14,7 @@ layout:
     maximize: true
     outputOnly: true
     ---
-    commentary --send playground \# Welcome to the Kui Playground :rocket:\n\nAuthor your own Kui Guidebook, using markdown! You can edit this example, using the editor to the left, or explore the other tabs in this playground.
+    commentary --send playground \# Welcome to the Guidebooks Playground :rocket:\n\nAuthor your own [Kui](https://github.com/kubernetes-sigs/kui) Guidebook, using markdown! You can edit this example, and watch the preview to the right update.\n\nGuidebooks support a suite of Markdown UIs, including:\n- Hints\n- Expandable Sections\n- Tabs\n- Executable code blocks\n\nHave fun learning these, or explore some more complex examples via the top-most tabs.\n\n
     ```
 
 === "Hints"
@@ -25,7 +27,7 @@ layout:
     commentary --send playground -f /kui/hints.md
     ```
 
-=== "Expandable Section"
+=== "Expandable Sections"
     ```bash
     ---
     execute: now
@@ -54,7 +56,6 @@ layout:
     ---
     commentary --send playground -f /kui/code-blocks.md
     ```
-
 
 ---
 

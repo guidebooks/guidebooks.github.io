@@ -34,16 +34,17 @@ export default function renderMain(props: KuiProps) {
   return (
     <Kui
       noHelp
+      noActiveInput
       productName={productName}
       lightweightTables
       loadingDone={null}
       {...props}
-      quietExecCommand={false}
       commandLine={
         props.commandLine || [
-          'commentary',
-          '-f',
-          '/kui/playground.md'
+          'replay',
+          '-r',
+          '/kui/playground.md',
+          '/kui/fybrik.md'
         ]
       }
     >
