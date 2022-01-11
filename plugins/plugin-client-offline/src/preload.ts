@@ -28,6 +28,7 @@ export default async () => {
       'plugin://plugin-client-common/notebooks/expandable-section.md',
       'plugin://plugin-client-common/notebooks/hints.md',
       'plugin://plugin-client-common/notebooks/tabs.md',
+      'plugin://client/notebooks/fybrik.md',
       'plugin://client/notebooks/playground.md'
     ],
     '/kui'
