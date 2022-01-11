@@ -2,7 +2,7 @@
   "app": "icons/png/kui.png",
   "large": "icons/svg/kui.svg",
   "wide": "icons/svg/kui-wide.svg",
-  "favicon": "icons/ico/kui.ico",
+  "favicon": "icons/ico/favicon.ico",
   "filesystem": {
     "darwin": "icons/icns/kui.icns",
     "win32": "icons/ico/kui.ico",
