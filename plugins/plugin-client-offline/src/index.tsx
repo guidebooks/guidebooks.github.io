@@ -72,13 +72,13 @@ export default function renderMain(props: KuiProps) {
     >
       <ContextWidgets>
         <Version/>
+        <GithubIcon />
       </ContextWidgets>
 
       <SpaceFiller/>
 
       <MeterWidgets>
         <MadeWithKui />
-        <GithubIcon />
       </MeterWidgets>
     </Kui>
   )
