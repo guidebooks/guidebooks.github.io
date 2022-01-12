@@ -1,5 +1,5 @@
 ---
-title: Example &mdash; Getting Started with Fybrik
+title: Example &mdash; Fybrik
 layout:
     1: left
 ---
@@ -402,4 +402,4 @@ applicable to that request.
     export DATA_URI="${SCHEME}://${HOSTNAME}:${PORT}"
     ```
 
-    Finally, we can repeat our [initial attempt to access the data set](./index.md).
+    Finally, we can repeat our [initial attempt to access the data set](#introduction).
