@@ -19,7 +19,7 @@ import React from 'react'
 import { productName } from '@kui-shell/client/config.d/name.json'
 import { homepage, version } from '@kui-shell/client/package.json'
 
-import { Kui, KuiProps, ContextWidgets, Icons, MeterWidgets, SpaceFiller, TextWithIconWidget } from '@kui-shell/plugin-client-common'
+import { Kui, KuiProps, ContextWidgets, Icons, MadeWithKui, MeterWidgets, SpaceFiller, TextWithIconWidget } from '@kui-shell/plugin-client-common'
 
 /**
  * We will set this bit when the user dismisses the Welcome to Kui
@@ -77,7 +77,8 @@ export default function renderMain(props: KuiProps) {
       <SpaceFiller/>
 
       <MeterWidgets>
-        <GithubIcon/>
+        <MadeWithKui />
+        <GithubIcon />
       </MeterWidgets>
     </Kui>
   )
