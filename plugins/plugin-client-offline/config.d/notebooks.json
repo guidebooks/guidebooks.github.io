@@ -1,10 +1,15 @@
 {
   "label": "Notebooks",
   "submenu": [
-    { "notebook": "Welcome to Guidebooks!", "filepath": "/kui/playground.md" },
+    {
+      "label": "Playgrounds",
+      "submenu": [
+        { "notebook": "Feature Explorer", "filepath": "/kui/playground.md" }
+      ]
+    },
     { "type": "separator" },
     {
-      "label": "IBM",
+      "label": "IBM Research",
       "submenu": [
         { "notebook": "Iter8", "filepath": "/kui/iter8.md" },
         { "notebook": "Fybrik", "filepath": "/kui/fybrik.md" }
