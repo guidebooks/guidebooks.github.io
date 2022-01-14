@@ -17,9 +17,11 @@
 import React from 'react'
 
 import { productName } from '@kui-shell/client/config.d/name.json'
+import guidebooks from '@kui-shell/client/config.d/notebooks.json'
 import { homepage, version } from '@kui-shell/client/package.json'
 
 import { Kui, KuiProps, ContextWidgets, Icons, MadeWithKui, MeterWidgets, SpaceFiller, TextWithIconWidget } from '@kui-shell/plugin-client-common'
+
 
 /**
  * We will set this bit when the user dismisses the Welcome to Kui
@@ -30,9 +32,9 @@ import { Kui, KuiProps, ContextWidgets, Icons, MadeWithKui, MeterWidgets, SpaceF
 // const welcomeBit = 'plugin-client-default.welcome-was-dismissed'
 
 
-function Version() {
+/* function Version() {
   return <TextWithIconWidget text={`Guidebooks v${version}`} viewLevel="normal" title={`Guidebooks version ${version}`} />
-}
+} */
 
 function GithubIcon() {
   return (
@@ -54,8 +56,12 @@ export default function renderMain(props: KuiProps) {
   return (
     <Kui
       noHelp
+      closeableTabs
       noActiveInput
+      version={version}
       productName={productName}
+      guidebooks={guidebooks.submenu}
+      guidebooksExpanded
       lightweightTables
       loadingDone={null}
       {...props}
@@ -64,14 +70,11 @@ export default function renderMain(props: KuiProps) {
         props.commandLine || [
           'replay',
           '-r',
-          '/kui/playground.md',
-          '/kui/iter8.md',
-          '/kui/fybrik.md'
+          '/kui/playground.md'
         ]
       }
     >
       <ContextWidgets>
-        <Version/>
         <GithubIcon />
       </ContextWidgets>
 
