@@ -1,0 +1,14 @@
+{
+  "label": "Notebooks",
+  "submenu": [
+    { "notebook": "Welcome to Guidebooks!", "filepath": "/kui/playground.md" },
+    { "type": "separator" },
+    {
+      "label": "IBM",
+      "submenu": [
+        { "notebook": "Iter8", "filepath": "/kui/iter8.md" },
+        { "notebook": "Fybrik", "filepath": "/kui/fybrik.md" }
+      ]
+    }
+  ]
+}
