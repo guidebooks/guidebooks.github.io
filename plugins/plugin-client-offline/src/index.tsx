@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 The Kubernetes Authors
+ * Copyright 2022 The Kubernetes Authors
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +21,6 @@ import guidebooks from '@kui-shell/client/config.d/notebooks.json'
 import { homepage, version } from '@kui-shell/client/package.json'
 
 import { Kui, KuiProps, ContextWidgets, Icons, MadeWithKui, MeterWidgets, SpaceFiller, TextWithIconWidget } from '@kui-shell/plugin-client-common'
-
 
 /**
  * We will set this bit when the user dismisses the Welcome to Kui
@@ -56,12 +55,13 @@ export default function renderMain(props: KuiProps) {
   return (
     <Kui
       noHelp
-      closeableTabs
+      noTopTabs
       noActiveInput
       version={version}
       productName={productName}
       guidebooks={guidebooks.submenu}
       guidebooksExpanded
+      guidebooksCommand="commentary --replace --readonly -f"
       lightweightTables
       loadingDone={null}
       {...props}
