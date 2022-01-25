@@ -30,6 +30,7 @@ export default async () => {
       'plugin://plugin-client-common/notebooks/tabs.md',
       'plugin://plugin-client-common/notebooks/wizard.md',
       'plugin://client/notebooks/iter8.md',
+      'plugin://client/notebooks/iter8.json',
       'plugin://client/notebooks/fybrik.md',
       'plugin://plugin-client-common/notebooks/playground.md'
     ],
