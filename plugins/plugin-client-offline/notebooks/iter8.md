@@ -1,37 +1,31 @@
 ---
-title: Example &mdash; Iter8
-layout:
-  1: left
+title: Iter8 &mdash; Getting Started
+layout: wizard
 ---
 
 # Iter8: Kubernetes Release Engineering
 
-[Iter8](https://iter8.tools) helps you safely roll out new versions of
-applications and ML models, and to maximize business value with each
-release.
+[Iter8](https://iter8.tools) is the **release engineering** platform
+for Kubernetes applications and ML models.
 
-## How it Works
-
-- **[Install CLI](#kui-link-install-iter8-cli)** *blank* The `iter8` CLI gives
-  you an easy way to manage your experiments.
-- **[Download example](#kui-link-download-load-test)** *blank* You may
-  craft an experiment by hand, or, as we do here, you may use `iter8`
-  to download a previously constructed experiment definition.
-- **[Run experiment](#kui-link-run-experiment)** *blank*
-- **[Check experiment status](#kui-link-assert-success)** *blank*
-- **[Generate a report](#kui-link-generate-text-report)** *minor*
+Iter8 is designed for DevOps and MLOps teams interested in maximizing
+release velocity and business value with their apps/ML models while
+protecting end-user experience. Use Iter8 for SLO validation, A/B
+testing and progressive rollouts of K8s apps/ML models.
 
 ---
 
-# Your First Experiment
+## Introduction
 
+This tutorial uses an [Iter8 experiment](concepts.md#what-is-an-iter8-experiment) to load test https://example.com and validate latency and error-related service level objectives (SLOs).
 
-!!! tip "Load test https://example.com and validate SLOs" 
+> ### What is an Iter8 experiment?
+>
+> An Iter8 experiment is a sequence of tasks that produce metrics-driven insights for your app/ML model versions, validates them, and optionally performs a rollout. Iter8 provides a set of pre-defined and customizable tasks.
 
-    Use an [Iter8 experiment](concepts.md#what-is-an-iter8-experiment) to load test https://example.com and validate latency and error-related service level objectives (SLOs).
+---
 
-
-## 1. Install Iter8
+## Install the CLI: The iter8 CLI gives you an easy way to manage your experiments
 
 === "Mac"
 
@@ -61,7 +55,10 @@ release.
 === "Binaries"
     Pre-compiled Iter8 binaries for many platforms are available [here](https://github.com/iter8-tools/iter8/releases). Uncompress the iter8-X-Y.tar.gz archive for your platform, and move the iter8 binary to any folder in your PATH.
 
-## 2. Download experiment
+---
+
+## Download experiment: You may craft an experiment by hand, or, as we do here, you may use iter8 to download a previously constructed experiment definition
+
 Download the `load-test` experiment folder from [Iter8 hub](../user-guide/topics/iter8hub.md) as follows.
 
 ```shell
@@ -73,7 +70,10 @@ status: done
 cd /tmp && iter8 hub -e load-test
 ```
 
-## 3. Run experiment
+---
+
+## Run experiment: Run load against the application, and monitor error rate and response time
+
 [Iter8 experiments](concepts.md#what-is-an-iter8-experiment) are specified using the `experiment.yaml` file. The `iter8 run` command reads this file, runs the specified experiment, and writes the results of the experiment into the `result.yaml` file.
 
 Run the experiment you downloaded above as follows.
@@ -115,8 +115,9 @@ cd /tmp/load-test && iter8 run --set url=https://example.com
 
     If you are familiar with Helm, you probably noticed that the load-test folder resembles a Helm chart. This is because, Iter8 experiment charts are Helm charts under the covers. The iter8 run command used above combines the experiment chart with values to generate the experiments.yaml file, much like how Helm charts can be combined with values to produce Kubernetes manifests.
 
-## 4. Assert outcomes
-Assert that the experiment completed without any failures and SLOs are satisfied.
+## Assert outcomes
+
+Assert that the experiment completed without any failures and SLOs are satisfied
 
 ```shell
 ---
@@ -125,7 +126,8 @@ id: assert-success
 cd /tmp/load-test && iter8 assert -c completed -c nofailure -c slos
 ```
 
-## 5. Generate report
+## Generate report
+
 Generate a report of the experiment in HTML or text formats as follows.
 
 === "HTML"
@@ -148,5 +150,3 @@ Generate a report of the experiment in HTML or text formats as follows.
     ---
     cd /tmp/load-test && iter8 report -o text
     ```
-
-Congratulations! :tada: You completed your first Iter8 experiment.
