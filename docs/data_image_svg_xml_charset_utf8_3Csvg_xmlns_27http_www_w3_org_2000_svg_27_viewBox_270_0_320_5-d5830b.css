@@ -1,0 +1,54 @@
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/@kui-shell/plugin-client-common/web/scss/components/Select/PatternFly.scss ***!
+  \**********************************************************************************************************************************************************************************/
+/*
+ * Copyright 2021 The Kubernetes Authors
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+.kui--select .pf-c-select__menu {
+  max-width: 20rem;
+}
+
+.kui--popover .kui--select {
+  font-size: 0.75rem;
+  /** Groups with no label: don't show the empty label element */
+  /** For some reason, PatternFly doesn't seem to get the ellipsis right here; @patternfly/react-core@4.90.2 */
+}
+.kui--popover .kui--select .pf-c-select__menu-group-title:empty {
+  display: none;
+}
+.kui--popover .kui--select .pf-c-select__menu-item-main {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.kui--popover .kui--select .pf-c-select__toggle-typeahead {
+  font-size: 0.75rem;
+  font-family: var(--font-sans-serif);
+}
+.kui--popover .kui--select .kui--select-option[aria-selected=true] {
+  font-weight: 500;
+  color: var(--active-tab-color);
+}
+.kui--popover .kui--select .pf-c-select__menu-item-description {
+  font-weight: normal;
+}
+.kui--popover .kui--select .pf-c-select__menu-group-title,
+.kui--popover .kui--select .pf-c-select__menu-item-icon {
+  font-size: inherit;
+}
+.kui--popover .kui--select button {
+  font-size: inherit;
+  padding-top: 0.375em;
+  padding-bottom: 0.375em;
+}
