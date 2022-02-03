@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_guidebooks_playground=self.webpackChunk_guidebooks_playground||[]).push([[96640],{67976:(o,s,u)=>{u.r(s),u.d(s,{default:()=>e});const e="Icons for MacOS\n"}}]);
