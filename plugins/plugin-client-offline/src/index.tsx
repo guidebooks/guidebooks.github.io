@@ -55,24 +55,10 @@ export default function renderMain(props: KuiProps) {
   return (
     <Kui
       noHelp
-      noTopTabs
-      noActiveInput
       version={version}
       productName={productName}
-      guidebooks={guidebooks.submenu}
-      guidebooksExpanded
-      guidebooksCommand="commentary --replace --readonly -f"
       lightweightTables
-      loadingDone={null}
       {...props}
-      initialTabTitle=" "
-      commandLine={
-        props.commandLine || [
-          'replay',
-          '-r',
-          '/kui/playground.md'
-        ]
-      }
     >
       <ContextWidgets>
         <GithubIcon />

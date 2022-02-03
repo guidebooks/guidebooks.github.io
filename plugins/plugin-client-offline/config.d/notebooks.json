@@ -4,21 +4,52 @@
     {
       "label": "Playgrounds",
       "submenu": [
-        { "notebook": "Feature Explorer", "filepath": "/kui/playground.md" }
+        { "notebook": "Feature Explorer", "filepath": "/kui/playground.md", "open": true }
       ]
     },
     { "type": "separator" },
     {
       "label": "IBM Research",
       "submenu": [
-        { "notebook": "Iter8", "filepath": "/kui/iter8.md" },
-        { "notebook": "Fybrik", "filepath": "/kui/fybrik.md" }
+        { "notebook": "Iter8", "filepath": "/kui/client/iter8.md" },
+        { "notebook": "Fybrik", "filepath": "/kui/client/fybrik.md" }
       ]
     },
     { "type": "separator" },
     {
       "label": "Knative",
-      "submenu": [{ "notebook": "Getting Started", "filepath": "/kui/kubernetes/knative-getting-started.md" }]
+      "submenu": [
+        { "notebook": "Getting Started", "filepath": "/kui/kubernetes/knative-getting-started.md" },
+        {
+          "label": "Serving",
+          "submenu": [
+            { "notebook": "First Knative Service", "filepath": "/kui/kubernetes/knative-first-service.md" },
+            { "notebook": "Scaling to Zero", "filepath": "/kui/kubernetes/knative-first-autoscale.md" },
+            { "notebook": "Traffic Splitting", "filepath": "/kui/kubernetes/knative-traffic-splitting.md" }
+          ]
+        },
+        {
+          "label": "Eventing",
+          "submenu": [
+            {
+              "notebook": "Introducing Knative Eventing",
+              "filepath": "/kui/kubernetes/knative-introducing-eventing.md"
+            },
+            {
+              "notebook": "Sources, Brokers, Triggers, Sinks",
+              "filepath": "/kui/kubernetes/knative-eventing-components.md"
+            },
+            {
+              "notebook": "Introducing the CloudEvents Player",
+              "filepath": "/kui/kubernetes/knative-cloud-events-player.md"
+            },
+            {
+              "notebook": "Creating your first Trigger",
+              "filepath": "/kui/kubernetes/knative-first-trigger.md"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
