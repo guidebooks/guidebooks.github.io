@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_guidebooks_playground=self.webpackChunk_guidebooks_playground||[]).push([[53909],{19770:(o,i,e)=>{e.r(i),e.d(i,{default:()=>n});const n="Icons for Windows\n\n\nGuide dog attribution: https://commons.wikimedia.org/wiki/File:Twemoji12_1f9ae.svg\n"}}]);
