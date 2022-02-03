@@ -21,19 +21,13 @@ import { notebookVFS } from '@kui-shell/plugin-core-support'
  *
  */
 export default async () => {
-  notebookVFS.cp(
+  /* notebookVFS.cp(
     undefined,
     [
-      'plugin://plugin-client-common/notebooks/code-blocks.md',
-      'plugin://plugin-client-common/notebooks/expandable-section.md',
-      'plugin://plugin-client-common/notebooks/hints.md',
-      'plugin://plugin-client-common/notebooks/tabs.md',
-      'plugin://plugin-client-common/notebooks/wizard.md',
       'plugin://client/notebooks/iter8.md',
       'plugin://client/notebooks/iter8.json',
-      'plugin://client/notebooks/fybrik.md',
-      'plugin://plugin-client-common/notebooks/playground.md'
+      'plugin://client/notebooks/fybrik.md'
     ],
     '/kui'
-  )
+  ) */
 }
