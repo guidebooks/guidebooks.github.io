@@ -9,6 +9,13 @@
     },
     { "type": "separator" },
     {
+      "label": "Kubernetes",
+      "submenu": [
+        { "notebook": "CRUD Operations", "filepath": "/kui/kubernetes/crud-operations.md" }
+      ]
+    },
+    { "type": "separator" },
+    {
       "label": "IBM Research",
       "submenu": [
         { "notebook": "Iter8", "filepath": "/kui/client/iter8.md" },
@@ -22,7 +29,7 @@
         {
           "label": "Getting Started",
           "submenu": [
-            { "notebook": "Quick start", "filepath": "/kui/kubernetes/knative-getting-started.md" },
+            { "notebook": "Quick start", "filepath": "/kui/kubernetes/knative-quickstart.md" },
             {
               "label": "Serving",
               "submenu": [
